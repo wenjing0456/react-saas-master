@@ -24,6 +24,7 @@ ajax.getTypeList()
 dateFormat => 时间戳转年月日(默认值为YYYY-MM-DD,可传入参数更改)
 
 ## 目录结构
+```shell
 .
 ├── README.md
 ├── node_modules
