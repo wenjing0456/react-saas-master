@@ -1,15 +1,17 @@
 
 ** 项目依赖 : npm i
 
-** 项目启动 : npm start java=端口名 (不写java默认连接test)
+** 项目启动 : npm start
 
 
 #### ajax请求
 默认json格式请求,
-如需要换成form格式请求,在接口对象上加ContentType:'form';
-如需换成form-data格式请求,在接口对象上加ContentType:'form-data'
+如需要换成form格式请求,在接口对象上加ContentType:'form';  
+如需换成form-data格式请求,在接口对象上加ContentType:'form-data'  
+引入api文件时，统一以ajax引入，方便辨识和标记接口
+Eg：import ajax from  '../api/infoApi'
 ```javascript
-ajax.getTypeList()
+ajax.ckeckToken()
     .then(rs => {
         this.$tip(rs.message)
     })
