@@ -1,5 +1,6 @@
 import React from 'react';
 import ajax from  '../../../api/infoApi'
+import '../../../mock/inforApi/mock'
 class notFound extends React.Component {
 
   constructor(){
@@ -13,8 +14,8 @@ class notFound extends React.Component {
     ajax.addAndQueryCheJiPeInfo({type:1})
           .then(function(res){
             console.log(res)
-          }).catch(function(){
-
+          }).catch(function(err){
+            console.log(err)
           })
   }
   

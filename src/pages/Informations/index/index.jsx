@@ -32,9 +32,9 @@ class Index extends React.Component {
         <p> mock数据： </p>
         <ul>
           {
-            data.data.map(function(val,idx){
-              return <li key={idx}> 我是，{val.name} ，住在:{val.addr}</li>
-            })
+            // data.data.map(function(val,idx){
+            //   return <li key={idx}> 我是，{val.name} ，住在:{val.addr}</li>
+            // })
           }
         </ul>
         <p>路由:</p>
