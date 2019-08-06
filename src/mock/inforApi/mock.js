@@ -2,7 +2,6 @@ import Mock from 'mockjs'
 // const Random = Mock.Random
 // Random.county()
 let data = Mock.mock(/http:\/\/localhost:3000/, 'get', function (options) {
-  console.log(options)
   if(options.url.indexOf('addAndQueryCheJiPeccancyInfo') !== -1){
 
     return Mock.mock({
@@ -23,6 +22,5 @@ let data = Mock.mock(/http:\/\/localhost:3000/, 'get', function (options) {
   }else{
     return 1
   }
-  
 })
 export default data;

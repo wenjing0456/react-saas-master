@@ -1,7 +1,12 @@
-p{
-  color: #000;
+@import '../../../common/styles/styles.scss';
+.test_classWrap{
+  margin: 0 auto;
+  text-align: center;
+  span{
+    display: inline-block;
+  }
 }
-.todoWrap{
-  width: 96%;
-  margin: 10px auto;
+.test_class{
+  width: px2rem(750);
+  background: pink;
 }

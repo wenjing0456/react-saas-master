@@ -9,7 +9,6 @@ class notFound extends React.Component {
       
     }
   }
-
   componentDidMount(){
     ajax.addAndQueryCheJiPeInfo({type:1})
           .then(function(res){

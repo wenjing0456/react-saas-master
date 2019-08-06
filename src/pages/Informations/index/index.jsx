@@ -1,26 +1,41 @@
 import React from 'react';
+import ajax from  '../../../api/infoApi'
 import Header from '../../components/header/header';
 import { Link } from "react-router-dom";
 // import Toast from '../../components/toast/toast'
 import data from '../../../mock/inforApi/mock'
 import '../index/index.scss'
+import Toast from '../../components/toast/toast';
 class Index extends React.Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     showToast:false
-  //   };
-  // }
+  constructor(props, context) {
+    console.log(props)
+    console.log(context)
+    super(props, context);
+    this.state = {
+        subData:{
+          name:'xiao',
+          age:18
+        }
+    }
+}
+  componentDidMount(){
+    ajax.addAndQueryCheJiPeInfo({type:1})
+          .then(function(res){
+            console.log(res)
+          }).catch(function(err){
+            console.log(err)
+          })
+  }
   render() {
     const names = ['张三','小hei','莉莉'];
     // var show = false;
     return (
       
       <div className="home-wrap">
-        {/* <RouteMap/> */}
+        
         <Header name='top'/>
+        <Toast message={ this.state.subData }/>
         <button className="testToastBtn" onClick={this.showToast}>测试Toast</button>
-        {/* {this.show ? <Toast text="加载成功"/> : null} */}
         <p> 遍历数据： </p>
         <ul>
           {

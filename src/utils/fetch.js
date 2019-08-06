@@ -55,6 +55,7 @@ axios.interceptors.request.use(config => {
 // 返回响应请求后处理数据
 axios.interceptors.response.use(res => {
   // Indicator.close();
+  console.log(res)
   return res;
 }, error => {
   // Indicator.close();

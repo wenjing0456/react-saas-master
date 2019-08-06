@@ -49,7 +49,7 @@ class Lists extends React.Component {
       // console.log(e)
     }
     return (
-      <div className="homeWrap">
+      <div className="page-list">
         <p>Demo：todo list</p>
         <div className="todoWrap">
           <input className="addTask" ref='text' type="text" /><button onClick={this.addTask}>Add</button>
