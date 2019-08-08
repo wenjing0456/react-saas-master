@@ -45,20 +45,15 @@ export default function fetch(opt){
 }
 // 发送请求前处理数据
 axios.interceptors.request.use(config => {
-  // Indicator.open();
   return config;
 }, error => {
-  // Indicator.close();
   return Promise.reject(error);
 });
 
 // 返回响应请求后处理数据
 axios.interceptors.response.use(res => {
-  // Indicator.close();
-  console.log(res)
   return res;
 }, error => {
-  // Indicator.close();
   let errorCode = error.response.status;
   if (errorCode === 401) {
       // utils.$go('login');

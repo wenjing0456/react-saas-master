@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.scss'
 class Details extends React.Component {
-  
+
   render() {
     return (
       <div className="homeWrap">

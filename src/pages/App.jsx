@@ -7,7 +7,7 @@ class App extends React.Component{
     return (
       <div className="container">
         {/* <p>我是公用的header</p> */}
-        <div>{ this.props.children }</div>
+        {/* <div>{ this.props.children }</div> */}
         <Router/>
       </div>
     )

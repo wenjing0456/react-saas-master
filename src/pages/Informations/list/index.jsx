@@ -43,8 +43,7 @@ class Lists extends React.Component {
     }
   }
   render() {
-
-    
+  
     const lineText = (e) => {
       // console.log(e)
     }

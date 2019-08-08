@@ -4,7 +4,7 @@ class Header extends React.Component {
   
   render() {
     return (
-      <div className="header-wrap">
+      <div className="c-sheader-wrap">
         {this.props.name}
       </div>
     );

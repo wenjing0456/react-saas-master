@@ -5,13 +5,13 @@ import Index from '../pages/Informations/index/index'
 import Details from '../pages/Informations/details'
 import Lists from '../pages/Informations/list'
 import notFound from '../pages/Informations/404'
-
+import helloTsx from '../pages/Informations/ts/index.tsx'
 class RouteMap extends React.Component {
   updateHandle() {
       console.log('每次router变化之后都会触发')
   }
   componentDidMount() {
-    console.log(this.props.location);
+    // console.log(this.props.location);
   }
   render() {
       return (
@@ -21,6 +21,7 @@ class RouteMap extends React.Component {
           <Route path="/index" component={Index} />
           <Route path="/details" component={Details}/>
           <Route path="/list" component={Lists}/>
+          <Route path="/tsx" component={helloTsx}/>
         </Router>
       )
   }

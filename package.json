@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/react": "^16.8.24",
+    "@types/react-dom": "^16.8.5",
     "amfe-flexible": "^2.2.1",
     "axios": "^0.19.0",
     "mockjs": "^1.0.1-beta3",
@@ -13,7 +15,8 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.4",
-    "sass-loader": "^7.1.0"
+    "sass-loader": "^7.1.0",
+    "typescript": "^3.5.3"
   },
   "scripts": {
     "start": "react-scripts start",

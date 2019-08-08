@@ -1,13 +1,12 @@
 import fetch from '../utils/fetch'
 
-export default{
-  //添加车辆
-  addAndQueryCheJiPeInfo(data) {
-      return fetch({
-          method: 'get',
-          url: `/peccancy/addAndQueryCheJiPeccancyInfo`,
-          data
-      })
+export default {
+  shopList(data) { //请求商户列表
+    return fetch({
+      method: 'get',
+      url: `/restapi/shopping/v3/restaurants`,
+      data
+    })
   },
 }
 // 车辆品牌查询
