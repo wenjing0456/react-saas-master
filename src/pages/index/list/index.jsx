@@ -1,5 +1,5 @@
 import React from 'react';
-import '../list/style.scss'
+import './style.scss'
 class Lists extends React.Component {
   /*
     遗留问题：

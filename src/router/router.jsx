@@ -1,11 +1,11 @@
 import React  from 'react';
 import { HashRouter as Router, Route } from "react-router-dom";
 
-import Index from '../pages/Informations/index/index'
-import Details from '../pages/Informations/details'
-import Lists from '../pages/Informations/list'
-import notFound from '../pages/Informations/404'
-import helloTsx from '../pages/Informations/ts/index.tsx'
+import Index from '../pages/index/index/index'
+import Details from '../pages/index/details'
+import Lists from '../pages/index/list'
+import notFound from '../pages/index/404'
+import Demo from '../pages/index/demo'
 class RouteMap extends React.Component {
   updateHandle() {
       console.log('每次router变化之后都会触发')
@@ -21,7 +21,7 @@ class RouteMap extends React.Component {
           <Route path="/index" component={Index} />
           <Route path="/details" component={Details}/>
           <Route path="/list" component={Lists}/>
-          <Route path="/tsx" component={helloTsx}/>
+          <Route path="/demo" component={Demo}/>
         </Router>
       )
   }

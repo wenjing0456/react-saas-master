@@ -1,11 +1,11 @@
 import React from 'react';
 import ajax from '../../../api/infoApi'
-import Header from '../../components/header/header';
+import Header from '../../../components/header/header';
 import { Link } from "react-router-dom";
 // import Toast from '../../components/toast/toast'
 import data from '../../../mock/inforApi/mock'
-import '../index/index.scss'
-import Toast from '../../components/toast/toast';
+import './index.scss'
+import Toast from '../../../components/toast/toast';
 class Index extends React.Component {
   constructor(props, context) {
     console.log(props)
@@ -57,7 +57,6 @@ class Index extends React.Component {
           <li><Link to="/details">cat Demo></Link></li>
           <li><Link to="/list">todo-list Demo></Link></li>
           <li><Link to="/404">404></Link></li>
-          <li><Link to="/tsx">测试 TS></Link></li>
         </ul>
         {this.props.children}
       </div>

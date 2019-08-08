@@ -1,6 +1,6 @@
 import * as React from 'react';
 import ajax from '../../../api/infoApi'
-import '../ts/index.scss'
+import './index.scss'
 class Testts extends React.Component {
 
 

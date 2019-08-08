@@ -1,5 +1,5 @@
 import React from 'react';
-import '../toast/toast.scss'
+import './toast.scss'
 class Toast extends React.Component{
   constructor(props){
     super(props)
