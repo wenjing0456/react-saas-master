@@ -1,0 +1,26 @@
+.footer-container{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  ul.footer-inner-wrap{
+    padding: 8px 0;
+    display: flex;
+    -webkit-box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+    box-shadow: 0 -0.026667rem 0.053333rem rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);
+    box-shadow: 0 -0.266667vw 0.533333vw rgba(0,0,0,.1);
+    li{
+      flex: 1;
+      text-align: center;
+      img{
+        width: 5.3vw;
+        height: 5.3vw;
+      }
+      span{
+        display: block;
+        color: #8e8e93;
+      }
+    }
+  }
+}
