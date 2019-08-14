@@ -23,7 +23,7 @@ class notFound extends React.Component {
       <div className="home-wrap">
         <p>找不到页面啦</p>
         {
-
+          
         }
       </div>
     );
